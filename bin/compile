@@ -19,6 +19,7 @@ LOG_FILE='/tmp/node-build-log.txt'
 source ${BP_DIR}/lib/output.sh
 
 ### Upload with Node
+cd {BP_DIR}
 npm install | output "$LOG_FILE"
 
 BUILD_DIR=${BUILD_DIR} \
